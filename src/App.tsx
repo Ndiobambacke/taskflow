@@ -1,3 +1,12 @@
+import { mockTasks } from './data/mockTasks'
+import { TaskCard } from './features/tasks/TaskCard'
+
 export default function App() {
-  return <h1 className="text-2xl font-bold text-blue-600">TaskFlow</h1>
+  return (
+    <div className="mx-auto max-w-md space-y-2 p-6">
+      {mockTasks.map((task) => (
+        <TaskCard key={task.id} task={task} />
+      ))}
+    </div>
+  )
 }
