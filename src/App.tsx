@@ -1,12 +1,12 @@
-import { mockTasks } from './data/mockTasks'
-import { TaskCard } from './features/tasks/TaskCard'
+import { Header } from './components/Header'
+import { Board } from './features/tasks/Board'
+import { mockProject, mockTasks } from './data/mockTasks'
 
 export default function App() {
   return (
-    <div className="mx-auto max-w-md space-y-2 p-6">
-      {mockTasks.map((task) => (
-        <TaskCard key={task.id} task={task} />
-      ))}
-    </div>
+    <>
+      <Header projectName={mockProject.name} />
+      <Board tasks={mockTasks} />
+    </>
   )
 }
