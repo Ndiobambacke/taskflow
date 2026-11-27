@@ -16,7 +16,7 @@ export const mockTasks: Task[] = [
     status: 'TODO',
     priority: 'HIGH',
     assigneeId: 1,
-    dueDate: '2026-11-10', // dépassée → « En retard »
+    dueDate: '2026-11-10', 
     createdAt: '2026-10-28T09:00:00Z',
   },
   {
@@ -49,7 +49,7 @@ export const mockTasks: Task[] = [
     status: 'DOING',
     priority: 'HIGH',
     assigneeId: 3,
-    dueDate: '2026-11-12', // dépassée → « En retard »
+    dueDate: '2026-11-12', 
     createdAt: '2026-11-03T10:00:00Z',
   },
   {
@@ -71,7 +71,7 @@ export const mockTasks: Task[] = [
     status: 'DONE',
     priority: 'LOW',
     assigneeId: 2,
-    dueDate: '2026-11-05', // dépassée mais terminée → pas de badge
+    dueDate: '2026-11-05', 
     createdAt: '2026-10-25T08:00:00Z',
   },
   {

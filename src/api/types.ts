@@ -9,8 +9,8 @@ export interface Task {
   status: TaskStatus
   priority: Priority
   assigneeId: number | null
-  dueDate: string | null // ISO : "2026-11-15"
-  createdAt: string // ISO 8601
+  dueDate: string | null 
+  createdAt: string 
 }
 
 export interface Project {
